@@ -1,8 +1,8 @@
-# atrails
+# ATrails
 
-A new Flutter project.
+ATrails was one of my first big Swift apps that was built to be a sort of social media platform for people on hiking trails. With only a month to develop it, I was able to create a whole post system connected to a Firebase Backend with a lot of other features planned. Although I don't have access to Swift now, I've decided to remake the app using Dart and Flutter, and this will also be a way for me to learn more about using Dart and building mobile apps again.
 
-## Getting Started
+## Project Startup Resources
 
 This project is a starting point for a Flutter application.
 
