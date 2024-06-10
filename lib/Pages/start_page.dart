@@ -1,3 +1,4 @@
+import 'package:atrails/Pages/StartPage/home_page.dart';
 import 'package:flutter/material.dart';
 
 class StartPage extends StatefulWidget {
@@ -25,6 +26,15 @@ class _StartPageState extends State<StartPage> {
                   Navigator.pop(context);
                 }, 
                 child: const Text("Go back to dev page")
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomePage())
+                  );
+                },
+                child: const Text("Test out Home Page"),
               )
             ],
           ),
