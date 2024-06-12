@@ -52,7 +52,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBK9DBZkNtyKZgPO4E_enotp18sv1j1TjM',
-    appId: '1:349744385353:android:a0aadf30fad8c215509e98',
+    appId: '1:349744385353:android:da61d19e2197958e509e98',
     messagingSenderId: '349744385353',
     projectId: 'atrails-flutter',
     storageBucket: 'atrails-flutter.appspot.com',
@@ -85,4 +85,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'atrails-flutter.appspot.com',
     measurementId: 'G-NHBFSDNE2M',
   );
+
 }
