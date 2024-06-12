@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class GroupsPage extends StatefulWidget {
-  const GroupsPage({ Key? key }) : super(key: key);
+  const GroupsPage({super.key});
 
   @override
-  _GroupsPageState createState() => _GroupsPageState();
+  State<GroupsPage>createState() => _GroupsPageState();
 }
 
 class _GroupsPageState extends State<GroupsPage> {
