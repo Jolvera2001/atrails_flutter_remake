@@ -10,8 +10,10 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  ProviderScope(
-    child: MyApp()
+  runApp(
+    const ProviderScope(
+      child: MyApp()
+    )
   );
 }
 
