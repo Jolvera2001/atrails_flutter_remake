@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "349744385353",
+    "project_id": "atrails-flutter",
+    "storage_bucket": "atrails-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349744385353:android:a0aadf30fad8c215509e98",
+        "android_client_info": {
+          "package_name": "com.jolvera.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK9DBZkNtyKZgPO4E_enotp18sv1j1TjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
