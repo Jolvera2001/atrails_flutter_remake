@@ -33,7 +33,7 @@ class StartPage extends ConsumerWidget {
 }
 
 class LoginForm extends ConsumerWidget {
-  const LoginForm({super.key});
+  const LoginForm({super.key, required String username, required String password});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

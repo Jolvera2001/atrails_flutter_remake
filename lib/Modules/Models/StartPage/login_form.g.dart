@@ -8,8 +8,8 @@ part of 'login_form.dart';
 
 _$LoginFormImpl _$$LoginFormImplFromJson(Map<String, dynamic> json) =>
     _$LoginFormImpl(
-      username: json['username'] as String,
-      password: json['password'] as String,
+      username: json['username'] as String?,
+      password: json['password'] as String?,
     );
 
 Map<String, dynamic> _$$LoginFormImplToJson(_$LoginFormImpl instance) =>

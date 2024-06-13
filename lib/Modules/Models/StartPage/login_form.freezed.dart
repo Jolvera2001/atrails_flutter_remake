@@ -20,8 +20,8 @@ LoginForm _$LoginFormFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$LoginForm {
-  String get username => throw _privateConstructorUsedError;
-  String get password => throw _privateConstructorUsedError;
+  String? get username => throw _privateConstructorUsedError;
+  String? get password => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -34,7 +34,7 @@ abstract class $LoginFormCopyWith<$Res> {
   factory $LoginFormCopyWith(LoginForm value, $Res Function(LoginForm) then) =
       _$LoginFormCopyWithImpl<$Res, LoginForm>;
   @useResult
-  $Res call({String username, String password});
+  $Res call({String? username, String? password});
 }
 
 /// @nodoc
@@ -50,18 +50,18 @@ class _$LoginFormCopyWithImpl<$Res, $Val extends LoginForm>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = null,
-    Object? password = null,
+    Object? username = freezed,
+    Object? password = freezed,
   }) {
     return _then(_value.copyWith(
-      username: null == username
+      username: freezed == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
-              as String,
-      password: null == password
+              as String?,
+      password: freezed == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ) as $Val);
   }
 }
@@ -74,7 +74,7 @@ abstract class _$$LoginFormImplCopyWith<$Res>
       __$$LoginFormImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String username, String password});
+  $Res call({String? username, String? password});
 }
 
 /// @nodoc
@@ -88,18 +88,18 @@ class __$$LoginFormImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = null,
-    Object? password = null,
+    Object? username = freezed,
+    Object? password = freezed,
   }) {
     return _then(_$LoginFormImpl(
-      username: null == username
+      username: freezed == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
-              as String,
-      password: null == password
+              as String?,
+      password: freezed == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -107,15 +107,15 @@ class __$$LoginFormImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$LoginFormImpl implements _LoginForm {
-  _$LoginFormImpl({required this.username, required this.password});
+  _$LoginFormImpl({this.username, this.password});
 
   factory _$LoginFormImpl.fromJson(Map<String, dynamic> json) =>
       _$$LoginFormImplFromJson(json);
 
   @override
-  final String username;
+  final String? username;
   @override
-  final String password;
+  final String? password;
 
   @override
   String toString() {
@@ -152,17 +152,16 @@ class _$LoginFormImpl implements _LoginForm {
 }
 
 abstract class _LoginForm implements LoginForm {
-  factory _LoginForm(
-      {required final String username,
-      required final String password}) = _$LoginFormImpl;
+  factory _LoginForm({final String? username, final String? password}) =
+      _$LoginFormImpl;
 
   factory _LoginForm.fromJson(Map<String, dynamic> json) =
       _$LoginFormImpl.fromJson;
 
   @override
-  String get username;
+  String? get username;
   @override
-  String get password;
+  String? get password;
   @override
   @JsonKey(ignore: true)
   _$$LoginFormImplCopyWith<_$LoginFormImpl> get copyWith =>
